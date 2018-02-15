@@ -1,0 +1,32 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+
+  .sidenav button{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+  }
+/* 
+  .sidenav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  } */
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .container {
+    position: absolute;
+    top: 5em;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  

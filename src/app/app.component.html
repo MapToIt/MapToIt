@@ -1,0 +1,29 @@
+<head>
+    <base href="/">
+</head>
+
+<mat-toolbar class="header" color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button color="accent" ng-click="!showMenu"><fa name="bars"></fa></button>
+        <h1>MAP TO IT!</h1>
+    
+        <span class="spacer"></span>
+        
+        <button mat-button color="accent"><fa name="envelope-open"></fa> Contact Us</button>
+        <button mat-button color="accent"><fa name="users"></fa>About Us</button>
+        <button mat-button color="accent"><fa name="sign-in"></fa>Sign In/Register</button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-drawer-container class="container" ng-if="showMenu">
+    <mat-drawer mode="side" opened class="sidenav">
+            <button mat-button>About</button>
+            <button mat-button>Contact</button>
+            <button mat-button>Sign In/Register</button>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet> 
+    </mat-drawer-content>
+</mat-drawer-container>
+      
+
