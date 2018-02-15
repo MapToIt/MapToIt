@@ -50,7 +50,6 @@ import {
   MatTooltipModule,
 } from '@angular/material';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './/app-routing.module';
 
 const appRoutes: Routes = [
   {
@@ -114,7 +113,6 @@ const appRoutes: Routes = [
     OverlayModule,
     PlatformModule,
     PortalModule,
-    AppRoutingModule,
   ],
   exports:[
     AngularFontAwesomeModule,
